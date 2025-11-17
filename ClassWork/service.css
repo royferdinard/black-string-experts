@@ -1,0 +1,390 @@
+.card{
+    width: 400px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 0 0 green;
+    overflow: hidden;
+    padding-left: 5px;
+    transition: transform 0.3s ease;
+    float: inline-start;
+    width: 35%;
+    border-color: green;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 25px green;
+}
+.card h1{
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card p{
+    color: green;
+    padding: 5px;
+
+}
+.heading{
+    margin-left: 40%;
+}
+.image{
+    margin-left: 35%;
+}
+.card2{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 5px;
+    box-shadow: 10px 10px 0 0 orange;
+    width: 400px;
+    padding-left: 5px;
+    width: 35%;
+    border-color: orange;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+    
+}
+.card2:hover{
+    box-shadow: 0 10px 25px orange;
+    transform: translateY(-20px);
+}
+.card2 h1{
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card2 p{
+    color: green;
+    padding: 5px;
+
+}
+.image2{
+    margin-left: 35%;
+}
+.card3{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 green;
+    border-color: green;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+    
+
+
+}
+.card3:hover{
+    box-shadow: 0 10px 25px green;
+    transform: translateY(-20px);
+}
+.card3 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card3 p{
+    color: green;
+    padding: 5px;
+
+}
+.image3{
+    margin-left: 35%;
+}
+.card4{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 orange;
+    border-color: orange;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+
+
+}
+.card4:hover{
+    box-shadow: 0 10px 25px orange;
+    transform: translateY(-20px);
+}
+.card4 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card4 p{
+    color: orange;
+    padding: 5px;
+
+}
+.image4{
+    margin-left: 35%;
+}
+
+.card5{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 green;
+    border-color: green;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+
+
+}
+.card5:hover{
+    box-shadow: 0 10px 25px green;
+    transform: translateY(-20px);
+}
+.card5 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card5{
+    color: green;
+    padding: 5px;
+
+}
+.image5{
+    margin-left: 35%;
+}
+.card6{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 orange;
+    border-color: orange;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+
+
+}
+.card6:hover{
+    box-shadow: 0 10px 25px orange;
+    transform: translateY(-20px);
+}
+.card6 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card6{
+    color: orange;
+    padding: 5px;
+
+}
+.image6{
+    margin-left: 35%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.card7{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 green;
+    border-color: green;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+
+
+}
+.card7:hover{
+    box-shadow: 0 10px 25px green;
+    transform: translateY(-20px);
+}
+.card7 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card7{
+    color: green;
+    padding: 5px;
+
+}
+.image7{
+    margin-left: 35%;
+}
+.card8{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-left: 5px;
+    width: 400px;
+    width: 35%;
+    box-shadow: 10px 10px 0 0 orange;
+    border-color: orange;
+     display: block;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 250px;
+
+
+}
+.card8:hover{
+    box-shadow: 0 10px 25px orange;
+    transform: translateY(-20px);
+}
+.card8 h1{
+     font-size: 25px;
+    color: black;
+    align-items: center;
+    margin-left: 10%;
+}
+.card8{
+    color: orange;
+    padding: 5px;
+
+}
+.image8{
+    margin-left: 35%;
+}
+header{
+    position: fixed;
+    z-index: 9999;
+    background-color: orange;
+    width: 100%;
+    top: 0;
+    height: 5%;
+     padding: 20px;
+    display: flex;
+    gap: 20px;
+    margin-right: 0;
+}
+.heading{
+    margin-top: 80px;
+}
+a{
+    color: green;
+    font-weight: 100px;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 38px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    color: green;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid green;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px black, 0 0 20px black;
+
+}
+ @keyframes colorGlow {
+    0% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+    25%{
+        border-color: black;
+        box-shadow: 0 0 20px black, 0 0 40px black;
+        background-color: transparent;
+        color: black;
+    }
+    33% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+      color: #ff00ff;
+      background: transparent;
+    }
+    66% {
+      border-color: #ffcc00;
+      box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+      color: #ffcc00;
+      background: transparent;
+    }
+    100% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+  }
+a:hover{
+    animation: colorGlow 2s linear infinite;
+    
+}
+.nav{
+    gap: 40px;
+}
+footer{
+    background-color: orange;
+    border-radius: 15px;
+    border-color:10px 10px green;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p{
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+  /* Page content */
+  .content {
+    padding: 50px;
+    color: white;
+    max-width: 10000px;
+    margin: 0 auto;
+  }

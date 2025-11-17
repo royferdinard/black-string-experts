@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="roy.nitlify.portfolio"
+    <title>roy.nitlify.portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style type="text/css">
+        body{
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            overflow-x: hidden;
+            height: 100%;
+  
+
+        }
+
+        
+        .navigation{
+            background-color: whitesmoke;
+            background-size: 10px;
+            color: navy;
+        }
+        a.active{
+            border-color: darkblue;
+            border-left: none;
+            border-right: none;
+            border-bottom:none ;
+        }
+        .navigation:hover{
+            background-color: black;
+            outline-color: whitesmoke;
+            color: aliceblue;
+        }
+        
+        .navigation-button{
+            text-decoration: none;
+            padding: 15px;
+
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            top: 0;
+            
+            z-index: 9999;
+            background-color: white;
+        }
+a{
+    color: green;
+    font-weight: 100px;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 38px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    color: green;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid green;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px black, 0 0 20px black;
+
+}
+ @keyframes colorGlow {
+    0% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+    25%{
+        border-color: black;
+        box-shadow: 0 0 20px black, 0 0 40px black;
+        background-color: transparent;
+        color: black;
+    }
+    33% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+      color: #ff00ff;
+      background: transparent;
+    }
+    66% {
+      border-color: #ffcc00;
+      box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+      color: #ffcc00;
+      background: transparent;
+    }
+    100% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+  }
+a:hover{
+    animation: colorGlow 2s linear infinite;
+    
+}
+a:hover{
+    color: black;
+    box-shadow: 0 0 10px green;
+    background-color: green;
+    box-sizing:60px border-box;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: darkblue;
+}
+.tz{
+    
+     
+    
+    align-items: center;
+    width: 100%;
+    position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  top: 50%;
+  transform: translateY(-10%);
+
+
+    
+}
+#video{
+    position: fixed;
+    top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+ 
+  object-fit: cover;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  
+}
+h1, p{
+    text-shadow: 2px 2px 8px grey;
+}
+.tx{
+    padding-top: 0;
+
+}
+.cards{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* horizontal layout */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+
+.card1, .card2, .card3 {
+    background-color: transparent;
+    border-radius: 10px;
+    overflow-x: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid gray;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 10px 25px gray;
+    text-align: center;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    box-shadow: 0 10px 20px darkblue;
+    transform: translateY(-10px);
+}
+
+.cover{
+    
+  width: 100%;
+  height: 400px;
+  background-image: url('vegatation.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  z-index: -1;
+ 
+
+
+    
+}
+
+
+
+
+.cd{
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-right: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+    display: inline-block;
+
+}
+.cd:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 25px green;
+}
+.cd h1{
+    color: yellowgreen;
+}
+.content{
+    z-index: 2;
+    position: relative;
+    width: 80%;
+    z-index: 100;
+    
+}
+.content h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    margin-left: 10%;
+}
+.content p{
+    font-size: 30px;
+    margin-left: 13%;
+}
+.iframe{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* horizontal layout */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+.iframe1{
+    background-color: transparent;
+    box-shadow: 0 10px 25px gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow-x: hidden;
+    border: 10px solid gray;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+.iframe:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px darkblue;
+}
+.cardy{
+    background-color: transparent;
+    border-color: transparent;
+    overflow: hidden;
+    transition:transform 0.3s ease ,box-shadow 0.3s ease;
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+
+
+}
+
+.cardy:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 20px 40px darkblue;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav" class="navigation-button">
+        <a href="home.html" class="home"><i class="fa-solid fa-home"></i></a>
+        <a href="about.html" class="portfolio"><i class="fa-solid fa-info"></i></a>
+        <a href="contact.html" class="contact"><i class="fa-solid fa-user"></i></a>
+        <a href="skills.html"><i class="fa-solid fa-code"></i></a>
+        <a href="sevices.html"><i class="fa-solid fa-handshake"></i></a>
+    </nav>
+    </header>
+    <div class="tz">
+        <div><video width="100%" id="video" autoplay muted loop><source src="baccccc.mp4" type="video/mp4"><source src="baccccc.webm" type="video/webm"></video></div>
+        <h1 style="margin-left: 10%;font-size: 55px;z-index: 10;position:relative ;background-color: transparent;color: white;text-shadow: 2px 2px 8px grey;padding-top: 10%;">shaping future for programmer through quality training in my links...</h1>
+        <div style="width: 80%;margin-left: 13%;text-shadow: 2px 2px 8px grey;font-size: 28px;"><p><b style="color: darkblue;font-style: italic;">Roy ferdinard</b> is an experienced programmer and fullstack software developer who specifies in developing computer-based and modern softwares, websites and other technologised materials such as AI games used for solving real life situation problems which include descion making, business management, entertainment issues.....</p></div>
+        <div><a href="about.html">more details</a></div>
+        </div>
+    </div class="tx">
+   <div><p style="color: darkblue;margin-left: 25%;padding-top: 0;margin-top: 0px;font-size: 45px;">Why choose Roy ferdinard </p></div>
+   <div><p style="color: grey;margin-left: 31%;padding-top: 0;margin-top: -2px;">Discover what makes my services best over the rest</p></div>
+   <div class="cards">
+   <div class="card1">
+    <div><img src="expert.jpg" alt="" width="400px" height="150px" ></div>
+    <h1><b style="color: darkblue;">Expert</b></h1>
+    <div><p>i am experienced in different ICT field such as computer programming, software developement, web developement, computer basic.....</p></div>
+    <div><a href="about.html">Explore more</a></div>
+   </div><br>
+   <div class="card2">
+    <div><img src="format.jpg" alt="" width="400px" height="150px" ></div>
+    <h1><b style="color: darkblue;">Service-delivery-fomart</b></h1>
+    <div><p>I have several links to different social network of your choice that make my services enhanced that others.</p></div>
+    <div><a href="about.html">Explore more</a></div>
+   </div>
+   <div class="card3">
+    <div><img src="s delivary.jpg" alt="" width="400px" height="150px" ></div>
+    <h1><b style="color: darkblue;">Services-levels</b></h1>
+    <div><p>I offer my services depending on the level of my explorer eg. some may like to start the training from scratch.</p></div>
+    <div><a href="about.html">Explore more</a></div>
+   </div></div>
+   <div>
+            <div><center><h1><font size="9" face="arial">Have a</font> <font color="blue" face="arial" size="9">Real Experience </font> <font size="9" face="Arial">with me</font></h1></center></div>
+            <div><center style="color: gray;">Imerse yourself into my premium video that bring you close to </center></div>
+            <div><center style="color: gray;">reality</center></div>
+            <div class="iframe">
+                <div class="iframe1"><div></div><iframe width="500" height="315" src="https://www.youtube.com/embed/bJzb-RuUcMU?si=YS4SJt0uCSlHpfaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div><iframe width="800" height="415" src="https://www.youtube.com/embed/29l2qxSJSIw?si=AOrQ_1cbuOaz1Lsj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+            </div>
+   </div>
+   <div><center style="color: blue;font-size: 50px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Featured program</center></div>
+   <div><center style="color: gray;">Explore my programms that has led to sucess of million programmers</center></div><br><br>
+   <div>
+    <div class="cardy">
+        <div><img src="programming pic.jpg" alt="" width="100%" height="250px"></div>
+        <div>Training for all programming languages available at any day, any time, any hour, any minute of your choice.I train languages such as <b style="color: darkblue;font-size: 40px;font-weight: 10;">Pithon, Java, Javascript, Html, Css, MongoDB, Azure, Ruby, NodeJs, EpressJS, C++</b></div>
+    </div>
+    <div class="cardy">
+        <div><img src="ict.jpeg" alt="" width="100%" height="250px"></div>
+        <div><center><h1>ICT Trainer</h1></center></div>
+        <div><font size="5" color="grey">I also train in various ICT fields such as </font> <b style="color: darkblue;">Computer engineering, Computer programming, Computer networking, Network administration, Artificitial intelligence, Software engineering, Web developement, Cloud computing </b></div>
+
+
+    </div>
+   </div>
+
+
+<div class="cover">
+        
+    <div class="content">
+      <center><h1 >you are ready to join the world of technology?</h1></center>
+        <div ><center color="grey"><p>Join millions of training programmers in the journey to technological world</p></center></div>
+        <center><div><a href="sevices.html">for more information</a></div></center>
+    </div>
+</div>
+    
+
+     <footer>
+        <div class="Quick">
+        <fieldset class="cd" style="width: 90%;">
+            <h1>Quick links</h1>
+            <p><a href="home.html"><img src="home.png" alt="home icon" title="home page" width="40px" height="40px">HOME</a>
+            <a href="about.html"><img src="canvas.png" alt="about page" title="everything about me" width="40px" height="40px">ABOUT</a>
+            <a href="contact.html"><img src="contact.png" alt="contact page" title="find my links pages" width="40px" height="40px">CONTACT</a>
+            <a href="skills.html"><i class="fa-solid fa-code" title="skills"></i>skills</a>
+            <a href="sevices.html"><i class="fa-solid fa-handshake" title="services"></i>services</a></p>
+        </div>
+        </fieldset><hr style="color: green;font-size: 100px;">
+
+        <div class="cc"><a href="http://www.facebook.com/sahrmbayoalfred@gmail.com"><i class="fa-brands fa-facebook" title="facebook link"></i></a><a href="https://api.whatsapp.com/send?phone=+254706145498"><i class="fa-brands fa-whatsapp" title="whatsapp"></i></a><a href="https://www.youtube.com/@RoyFerdinard-s8y"><i class="fa-brands fa-youtube" title="youtube channel"></i></a><a href="https://mailto:royferdinard8@gmail.com"><i class="fa-solid fa-envelope" title="email us"></i></a><a href="https://wa.me/254706145498?text=hey%20hello"><i class="fa-regular fa-envelope" title="message us"></i></a></div>
+  <p style="color: green;"><i class="fa-regular fa-copyright"></i>2025royferdinard</p>
+  </footer>
+
+    
+</body>
+</html>

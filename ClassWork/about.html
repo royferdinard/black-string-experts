@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roy.Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style type="text/css">
+      body{
+        background-color: black;
+      }
+        .details{
+            width: 100%;
+            background-color: darkslategrey;
+            border-color: yellowgreen;
+            border: 5px;
+        }
+        .legend{
+            color: yellowgreen;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .list{
+            color: yellowgreen;
+        }
+        .nav{
+            background-color: wheat;
+        }
+        .nav-link{
+            border-color: darkslategrey;
+        }
+        .heading{
+            background-color: darkslategrey;
+            color: wheat;
+        }
+        a{
+    color: green;
+    font-weight: 100px;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 38px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    color: green;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid green;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px black, 0 0 20px black;
+
+}
+ @keyframes colorGlow {
+    0% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+    25%{
+        border-color: black;
+        box-shadow: 0 0 20px black, 0 0 40px black;
+        background-color: transparent;
+        color: black;
+    }
+    33% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+      color: #ff00ff;
+      background: transparent;
+    }
+    66% {
+      border-color: #ffcc00;
+      box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+      color: #ffcc00;
+      background: transparent;
+    }
+    100% {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+      background: transparent;
+    }
+  }
+a:hover{
+    animation: colorGlow 2s linear infinite;
+    
+}
+        a:hover{
+            color: yellowgreen;
+            background-color: darkslategrey;
+            border-color: yellowgreen;
+            border-radius: 5px;
+            width: 20%;
+            height: 10%;
+        }
+        .circle{
+            position: relative;
+            float: right;
+            width: 400px;
+            height: 400px;
+        }
+        .circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+    .circle::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 400px;
+    height: 400px;
+    border: 10px dashed yellowgreen;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .head2{
+    align-items: center;
+    color: yellowgreen;
+    float: center;
+    font-size: 40px;
+    padding-top: 2px;
+  }
+  .pic{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float:left;
+  }
+  .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .pic::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 400px;
+    height: 400px;
+    border: 10px dotted darkslategrey;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .fieldset2{
+    background-color: yellowgreen;
+    border-color: darkslategrey;
+    border: 5px;
+
+  }
+  .card {
+  width: 400px;
+  background: darkslategrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  float: left;
+  padding-left: 5px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: wheat;
+}
+
+.card-content p {
+  color: yellowgreen;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+.card2{
+  width: 400px;
+  background-color: darkslategrey;
+  border-color: darkslategrey;
+  border-radius: 10px;
+  float: inline-end;
+  transition: transform 0.3s ease, boxshadow 0.3s ease;
+  overflow: hidden;
+  margin-right: 5px;
+}
+.card2:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(70, 100, 0, 0.897);
+}
+.card2 img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card2-content2{
+  padding: 20px;
+
+}
+.card2-content2 h4{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: wheat;
+}
+.card2-content2 p{
+  color: yellowgreen;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+
+}
+.image{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  float: right;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.image::before{
+  top: -10px;
+  left: -10px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  animation: spin 5s linear infinite;
+  border: 10px dashed yellowgreen;
+  border-radius: 50%;
+  content: "";
+
+}
+@keyframes spin{
+  from{ transform: rotate(0deg);}
+  to{ transform: rotate(360deg);}
+
+}
+.fieldset3 legend{
+  color: yellowgreen;
+}
+.table1{
+  background-color: yellowgreen;
+  color: darkslategrey;
+  border: none;
+
+}
+.table1 caption{
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.table1 thead{
+  color: yellowgreen;
+  background-color: darkslategrey;
+}
+.table1 tr{
+  width: 400px;
+}
+.table1 td{
+  width: 100px;
+
+}
+.table1 tr:nth-child(even){
+  background-color: darkslategrey;
+
+
+}
+.table1{
+  float: left;
+}
+.thead{
+  background-color: yellowgreen;
+  color: darkslategrey;
+}
+header{
+  position: fixed;
+  background-color: wheat;
+  width: 100%;
+  height: 7%;
+  z-index: 9999;
+  padding: 10px 0;
+}
+.footer img{
+  background-color: transparent;
+  text-decoration: none;
+  fill: yellowgreen;
+  transition: fill 0.3s, filter 0.3s;
+  padding: 15px;
+  background-color: transparent;
+
+}
+.footer img:hover{
+  fill: yellowgreen;
+  filter: drop-shadow(0 0 10px white);
+}
+
+a{
+    color: green;
+    font-weight: 100px;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 38px;
+    margin: 0 20px;
+}
+a:hover{
+    color: black;
+    box-shadow: 0 0 10px green;
+    background-color: green;
+    box-sizing:60px border-box;
+}
+footer{
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+        <div class="nav-links">
+            <a href="home.html"><i class="fa-solid fa-home" title="homepage"></i></a>
+            <a href="about.html"><i class="fa-solid fa-info" title="about me"></i></a>
+            <a href="contact.html"><i class="fa-solid fa-user" title="links"></i></a>
+            <a href="skills.html"><i class="fa-solid fa-code" title="skills"></i></a>
+            <a href="sevices.html"><i class="fa-solid fa-handshake" title="services"></i></a>
+        </div>
+    </nav>
+  </header>
+    <h1 class="heading"><marquee behavior="scroll" direction="left" loop="true">my portfolio</marquee></h1>
+    <p>
+        <fieldset class="details">
+            <legend class="legend" style="margin-top: 32px;">PERSONAL DETAILS</legend>
+            <div class="circle"><img src="IMG_20251117_125051_HDR.jpg" alt="rotating border"></div>
+
+            <b style="color: wheat;">I am</b><ul class="list">
+                <li>fullstack software developer</li>
+                <li>computer basic expert</li>
+                <li>computer project developer</li>
+                <li>computer project designer</li>
+                <li>computer project analyst</li>
+                <li>frontend designer</li>
+                <li>graphical designer</li>
+                <li>computer scientist</li>
+
+            </ul>
+            <b style="color: wheat;">i help junior expert who has intrest in learning computer basic skill,<br> programming, research skills, graphical design skills, operating system <br>installation skills, technology research skills to chase their dreams.</b> <br><br>
+            <a href="file.pdf" download><i class="fa-solid fa-download" title="download"></i></a> <a href="tell:+254706145498"><i class="fa-solid fa-phone" title="hire me"></i></a>
+        </fieldset>
+    </p>
+    <p>
+        <h2 class="head2">WHAT I DO</h2>
+        <div>
+            <fieldset class="fieldset2">
+                <legend style="color: wheat;font-size: 30px;font-weight: bolder;">I can</legend>
+                <div class="pic"><img src="coding pic.avif" alt="coding pic"></div>
+                <div class="card">
+                    <img src="card.jpg" alt="card structure">
+                    <div class="content">
+                        <h3 style="color: wheat;">/>web developer</h3>
+                        <p style="color: yellowgreen;">develop a fulling running websites for different facilities such as hospitals, schools, bussines fields like supermarkets up to the standard that is required.</p>
+
+                    </div>
+                </div>
+                <div class="card2">
+                  <img src="software background.jpg" alt="software developement background">
+                  <div class="content2">
+                  <h4 style="color: wheat;">/>software developer</h4>
+                  <p style="color: yellowgreen;">develop different software used to perform defferent task for different facilities in different working environment at different level within different period of time.</p>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset3" style="width: 100%;color: yellowgreen;background-color: darkslategrey;border-color: yellowgreen;border: 5px;height: 70%;">
+              <legend style="font-size: 30px;"><i class="fa-solid fa-code"></i>MY EXPIRIENCE LEVEL IN PROGRAMMING</legend>
+              <div class="image">
+                <img src="programming pic.jpg" alt="programming language logo">
+              </div>
+              <div>
+                <table class="table1;" style="width: 60%;">
+                  <caption style="font-size: 20px;color: wheat;"><u>PROGRAMMING LANGUAGES COVERED</u></caption>
+                  <thead class="thead1" style="color: yellowgreen;background-color: darkslategrey;border-color: yellowgreen;">
+                    <tr>
+                      <th>programming language</th>
+                      <th>percentage covered</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody1" style="background-color: yellowgreen;color: darkslategray;">
+                    <tr>
+                      <td>HTML</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>JAVASCRIPT</td>
+                      <td>80%</td>
+
+                    </tr>
+                    <tr>
+                      <td>PITHON</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>VISSUAL BASIC OF APPLICATION</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </fieldset>
+        </div>
+    </p>
+    <footer class="footer">
+      <a href="http://api.whatsapp.com/send?phone=+254706145498" class="whatsapp"><i class="fa-brands fa-whatsapp" title="whatsapp me"></i></a><a href="http://tel:=254706145498" class="call"><i class="fa-solid fa-phone" title="call me"></i></a> <a href="http://mailto:royferdinard8@gmail.com" class="email"><i class="fa-solid fa-envelope" title="email me"></i></a> <a href="https://m.me/254706145498" class="message"><i class="fa-solid fa-message"></i></a><a href="https://facebook.com/roy.ferdinard" title="facebok link"><i class="fa-brands fa-facebook"></i></a><a href="https://www.youtube.com/@RoyFerdinard-s8y"><i class="fa-brands fa-youtube" title="youtube channel"></i></a>
+      <p style="color: yellowgreen;">&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-copyright"></i>2025royferdinard</p>
+    </footer>
+    
+</body>
+</html>
