@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>roy.calculator.app</title>
     <link rel="stylesheet" href="calculator.css">
-    <script src="calculator.js" defer></script>
 </head>
 <body>
-    <div class="caculator-container">
-        <input type="text" id="display" readonly>
-        <div class="keys">
-        <button id="operator" onclick="cleardisplay()">AC</button>
-         <button id="operator2" onclick="deletenumber()">DEL</button>
-         <button id="input-key" onclick="shuttdown()">OFF</button>
-         <button id="input-key" onclick="start()">ON</button>
-         <button id="input-key" onclick="appendToDisplay('()')">()</button>   
-         <button id="input-key" onclick="appendToDisplay('%')">%</button>
-          <button id="input-key" onclick="appendToDisplay('7')">7</button>
-          <button id="input-key" onclick="appendToDisplay('8')">8</button>
-          <button id="input-key" onclick="appendToDisplay('9')">9</button>
-          <button id="input-key" onclick="appendToDisplay('+')">+</button>
-          <button id="input-key" onclick="appendToDisplay('4')">4</button>
-          <button id="input-key" onclick="appendToDisplay('5')">5</button>
-          <button id="input-key" onclick="appendToDisplay('6')">6</button>
-          <button id="input-key" onclick="appendToDisplay('-')">-</button>
-          <button id="input-key" onclick="appendToDisplay('1')">1</button>
-          <button id="input-key" onclick="appendToDisplay('2')">2</button>
-          <button id="input-key" onclick="appendToDisplay('3')">3</button>
-          <button id="input-key" onclick="appendToDisplay('*')">*</button>
-          <button id="input-key" onclick="appendToDisplay('0')">0</button>
-          <button id="input-key" onclick="appendToDisplay('00')">00</button>
-          <button id="input-key" onclick="appendToDisplay('000')">000</button>
-          <button id="input-key" onclick="appendToDisplay('/')">/</button>
-          <button id="input-key" onclick="appendToDisplay('.')">.</button>
-          <button id="input-key" onclick="calculate()">=</button>
+          <div class="caculator-container">
+          <input type="text" id="display" readonly>
+          <div class="keys">
+          <button id="ac" data-action="clear" class="key">AC</button>
+          <button id="del" data-action="delete" class="key">DEL</button>
+          <button id="off" data-action="off" class="key">OFF</button>
+          <button id="on" data-action="on" class="key">ON</button>
 
-          </div>
-    </div>
+          <button class="key" data-value="(">(</button>
+          <button class="key" data-value=")">)</button>
+          <button class="key" data-value="%">%</button>
+          <button class="key" data-value="/">/</button>
+
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key" data-value="*">*</button>
+
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key" data-value="-">-</button>
+
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key" data-value="+">+</button>
+
+          <button class="key" data-value="0">0</button>
+          <button class="key" data-value="00">00</button>
+         
+          <button class="key" data-value=".">.</button>
+
+          <button id="equals" data-action="equals" class="key">=</button>
+
+            </div>
+        </div>
     
+<script src="calculator.js"></script>
 </body>
 </html>
