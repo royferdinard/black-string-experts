@@ -1,0 +1,135 @@
+.form-container{
+     border-radius: 50px;
+     color: #333333;
+     background-color:rgba(1, 1, 1, 0.63);
+     max-width: 32%;
+     margin-top: 5px;
+     position: relative;
+     z-index: 1;
+     margin: 3% auto;
+     align-items: center;
+    
+
+    
+}
+section{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+section video{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+/*body{
+    background-image: url('backgronds/signup image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+.input-field{
+    height: auto;
+    width: 80%;
+    margin-inline-start: 9%;
+    color: green;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.input-field:hover{
+    background-color: transparent;
+    box-shadow: 0 10px 25px black;
+    border-color: black;
+}
+.input-field:focus{
+    border-color: black;
+    background-color: transparent;
+    box-shadow: 0 10px 25px black;
+
+}
+h1{
+    color: green;
+    font-weight: bolder;
+
+}
+label{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.gender{
+    width: 100%;
+    height: 40px;
+    display: inline;
+    padding-left: 40px;
+    gap: 20px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.input, .input2{
+    margin-inline-start: 7%;
+}
+.hobbies{
+     width: 100%;
+    height: 40px;
+    display: inline;
+    padding-left: 40px;
+    gap: 20px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+select{
+    align-items: center;
+    margin-inline-start: 9%;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: green;
+    width: 80%;
+    text-align: center;
+}
+#arrows{
+   float: inline-end;
+     text-decoration: none;
+    color: rgb(0, 128, 58);
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration-style: wavy;
+}
+a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+    font-size: 22px;
+
+}
+.hobbies input:checked + .input2{
+    background-color: transparent;
+    border-color: green;
+    color: green;
+}
+
+

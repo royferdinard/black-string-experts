@@ -1,0 +1,1251 @@
+.newton-head{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(128, 126, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-nav{
+ display: flex;
+}
+.home-nav a{
+    height: 25px;
+}
+.drop-list-button {
+    background-color: transparent;
+    height: 32px;
+    width: 70px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.drop-list-courses{
+    display: none;
+    background-color: white;
+    box-shadow: 20px 20px 50px 15px olive ;
+    z-index: 9999;
+    width: 70px;
+    padding: 5px;
+    transform: translateY(-10);
+    transition: transform 0.45s ease, opacity 0.45s ease, maximum-height 0.45s ease;
+}
+.drop-list-courses i{
+    font-size: 10px;
+    padding-left: 5px;
+}
+.drop-list-courses a{
+    width: 60px;
+}
+.drop-list-items:hover .drop-list-courses{
+    display: block;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.header-section a{
+margin-right: 20px;
+}
+.head-and-motto-container{
+    display: flex;
+}
+.group{
+    display: block;
+    margin-bottom: 5px;
+}
+.group h1{
+    height: 5px;
+}
+.motto{
+    margin-left: 11px;
+    color: rgba(0, 0, 0, 0.699);
+    letter-spacing: 14px;
+    font-size: 15px;
+    margin-top: 0;
+}
+.logo{
+    margin-top: 5px;
+    background-color: transparent;
+    text-decoration: none;
+}
+.logo2{
+background-color: rgba(1, 1, 1, 0.884);
+padding-top: 20px;
+}
+a{
+   position: relative;
+   color: olive;
+   text-decoration: none;
+   border-radius: 5px;
+   background-color: transparent;
+   transition: all 0.3s ease;
+   border: 2px solid olive;
+   display: inline-block;
+   box-shadow: 0 0 10px olive, 0 0 20px olive;
+   padding: 14px, 30px;
+   font-family: sans-serif;
+   font-size: 15px; 
+}
+a:hover{
+    animation: colorglow 2s linear infinite;
+}
+@keyframes colorglow{
+    0%{ 
+        box-shadow: 0 0 20px yellowgreen, 0 0 40px yellowgreen;
+        background-color: transparent;
+        border-color: yellowgreen;
+        color: yellowgreen;
+    }
+    20%{ 
+        box-shadow: 0 0 20px blueviolet, 0 0 40px blueviolet;
+        background-color: transparent;
+        border-color: blueviolet;
+        color: blueviolet;
+    }
+    40%{ 
+        box-shadow: 0 0 20px blue, 0 0 40px blue;
+        background-color: transparent;
+        border-color: blue;
+        color: blue;
+    }
+    60%{ 
+        box-shadow: 0 0 20px olive, 0 0 40px olive;
+        background-color: transparent;
+        border-color: olive;
+        color: olive;
+    }
+    80%{ 
+        box-shadow: 0 0 20px maroon, 0 0 40px maroon;
+        background-color: transparent;
+        border-color: maroon;
+        color: maroon;
+    }
+    100%{ 
+        box-shadow: 0 0 20px darkblue, 0 0 40px darkblue;
+        background-color: transparent;
+        border-color: darkblue;
+        color: darkblue;
+    }
+
+}
+.video-container{
+    
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    transform: translateY(-50%, -50%);
+    width: 100%;
+    color: white;  
+    overflow: hidden;
+    margin-top: 95px;
+    z-index: -1;
+
+}
+.video{
+
+    top: 0;
+    left: 0;
+    
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    height: fit-content;
+    width: 100vw;
+    width: 100%;
+}
+.content{
+
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.description{
+    color: white;
+    font-family: "dancing script", cursive;
+    font-size: 35px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.title{
+    font-size: 50px;
+    color: olive;
+    font-family: "dancing script", cursive;
+    font-weight: bolder;
+}
+.container{
+    background-color: rgba(1, 1, 1, 0.884);
+    height: 700px;
+}
+.logo{
+    background-color: rgba(1, 1, 1, 0.712);
+    font-weight: bold;
+}
+html{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    
+}
+.scroll{
+    overflow-y: auto;
+}
+.more-about-school{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/*::-webkit-scrollbar{
+    font-size: 20px;
+    background-color: black;
+    z-index: 2;
+}*/
+.reason{
+    color: olive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 300px;
+}
+.reason2{
+    color: gray;
+    font-size: 18px;
+    margin-left: 410px;
+}
+figure i{
+    color: olive;
+}
+figure figcaption{
+    color: white;
+    font-family: "dancing script", cursive;
+    font-size: 25px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card1{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card1:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card1 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card1 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card1 img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.card1 img:hover{
+    transform: scale(1.05);
+}
+.card2{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card2:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card2 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card2 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card2 img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.card2 img:hover{
+    transform: scale(1.05);
+}
+.card3{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card3:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card3 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card3 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card3 img{
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 190px;
+}
+.card3 img:hover{
+    transform: scale(1.05);
+}
+.card4{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card4:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card4 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card4 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card4 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.card4 img:hover{
+    transform: scale(1.05);
+}
+.card5{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card5:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card5 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card5 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card5 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.card5 img:hover{
+    transform: scale(1.05);
+}
+.card6{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border-color: olive;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card6:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card6 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card6 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card6 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.card6 img:hover{
+    transform: scale(1.05);
+}
+.program-heading{
+    color: olive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 512px;
+}
+.program-heading2{
+color: gray;
+    font-size: 18px;
+    margin-left: 470px;
+}
+.programs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.program1{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.program1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program1 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.program1 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.program1 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.program1 img:hover{
+    transform: scale(1.10);
+}
+.program2{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.program2:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program2 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.program2 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.program2 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.program2 img:hover{
+    transform: scale(1.10);
+}
+.program3{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.program3:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program3 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.program3 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.program3 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.program3 img:hover{
+    transform: scale(1.10);
+}
+.program4{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.program4:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program4 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.program4 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.program4 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.program4 img:hover{
+    transform: scale(1.10);
+}
+.program5{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.program5:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program5 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.program5 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.program5 img{
+    width: 100%;
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+.program5 img:hover{
+    transform: scale(1.10);
+}
+.program6{
+    position: relative;
+    background-color: white;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.program6:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.program6 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    height: 15px;
+
+}
+.program6 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    z-index: -1;
+}
+.program{
+    transition: 0.4s;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+     color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    scrollbar-color: olive;
+    scroll-snap-type: mandatory;
+    scrollbar-shadow-color: olive;
+
+}
+.courses{
+    overflow-y: scroll;
+    position: relative;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+ 
+}
+.last{
+    margin-bottom: 30px;
+}
+.courses ul{
+   padding-left: 20px;
+}
+.experience-head{
+     color: olive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 300px;
+}
+.experience-head2{
+    color: gray;
+    font-size: 18px;
+    margin-left: 365px;
+}
+.videos-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.video1{
+    position: relative;
+    background-color: olive;
+    border-radius: 10px;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.video1 h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "dancing script", cursive;
+
+}
+.video iframe{
+    width: 100%;
+}
+.video1 iframe:hover{
+    transform: scale(1.05);
+}
+.video1:hover{
+    transform: scale(1.02);
+}
+.video2{
+    position: relative;
+    background-color: olive;
+    border-radius: 10px;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.video2 h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "dancing script", cursive;
+
+}
+.video2 iframe{
+    width: 100%;
+}
+.video2 iframe:hover{
+    transform: scale(1.05);
+}
+.video2:hover{
+    transform: scale(1.02);
+}
+.video3{
+    position: relative;
+    background-color: olive;
+    border-radius: 10px;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.video3 h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "dancing script", cursive;
+
+}
+.video3 iframe{
+    width: 100%;
+}
+.video3 iframe:hover{
+    transform: scale(1.05);
+}
+.video3:hover{
+    transform: scale(1.02);
+}
+.video4{
+    position: relative;
+    background-color: olive;
+    border-radius: 10px;
+    border: 2px solid olive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.video4 h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "dancing script", cursive;
+
+}
+.video4 iframe{
+    width: 100%;
+}
+.video4 iframe:hover{
+    transform: scale(1.05);
+}
+.video4:hover{
+    transform: scale(1.02);
+}
+.foundation{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 445px;
+    margin-top: 50px;
+}
+.foundation span{
+    color: olive;
+    font-size: 30px;
+    font-weight: 700;
+}
+.more-praise{
+    color: gray;
+    width: 80%;
+    text-align: justify;
+    font-size: 33px;
+    margin-right: 11px;
+}
+.foundation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.foundation-logo-head{
+    color: olive;
+    font-family: "dancing script", cursive;
+    font-weight: 700;
+    width: 20%;
+    display: block;
+    border: 2px solid gray;
+
+}
+.foundation-logo{
+    margin-left: 75px;
+    width: 15px;
+}
+.newton-foundation{
+    font-size: 25px;
+    margin: 0;
+
+}
+.values{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.vission-container{
+    display: block;
+}
+.sub-vission-container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.list1{
+    list-style-type: square;
+}
+.list1 li::marker{
+    color: olive;
+    font-size: 20px;
+}
+.fig1{
+    margin-left: 10px;
+}
+.fig1 i{
+    margin-left: 20px;
+}
+.fig1 figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+#icon{
+    color: olive;
+}
+.horizontal-line1{
+   border-top: 2px dashed olive;
+   border-bottom: none;
+
+}
+.sub-vission-container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.list2{
+    list-style-type: square;
+}
+.list2 li::marker{
+    color: olive;
+    font-size: 20px;
+}
+.fig2{
+    margin-left: 10px;
+}
+.fig2 i{
+    margin-left: 20px;
+}
+.fig2 figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+#icon{
+    color: olive;
+}
+.vission-paragraph{
+    text-align: left;
+}
+.sub-vission-container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.list3{
+    list-style-type: square;
+}
+.list3 li::marker{
+    color: olive;
+    font-size: 20px;
+}
+.fig3{
+    margin-left: 10px;
+}
+.fig3 i{
+    margin-left: 20px;
+}
+.fig3 figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+#icon{
+    color: olive;
+}
+.last-picture{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 50px;
+    width: 100%;
+    height: 40%;
+    transform: translateY(-50%, -50%);
+}
+.image{
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    object-fit: cover;
+    width: 100vw;
+    position: absolute;
+
+}
+.picture-container{
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.picture-container h1{
+    font-size: 40px;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    color: olive;
+}
+.footer-logo{
+    width: 80px;
+    height: 80px;
+
+}
+.picture-container p{
+    font-family: "dancing script", cursive;
+    font-size: 30px;
+}
+footer{
+    background-image: url('./backgronds/logo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background-color: navy;
+}
+.location{
+    display: block;
+    justify-content: center;
+}
+.location p{
+    color: white;
+    padding-left: 10px;
+    font-size: 15;
+}
+.location h1{
+    color: white;
+    height: 10px;
+    font-size: 25px;
+    
+}
+.location h2{
+    color: olive;
+    font-size: 27px;
+    margin-top: 0;
+    height: 30px;
+}
+.division-line{
+    border: 10px solid olive;
+    width: 1px;
+    height: 250px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+.page-links{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-links ul{
+    list-style: none;
+}
+.page-links ul li{
+    margin-bottom: 20px;
+}
+.dash{
+    color: olive;
+}
+.page-links h1{
+    color: white;
+    font-size: 25px;
+}
+.web-link{
+display: block;
+}
+.web-link ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+.web-link h1{
+    color: white;
+    font-size: 25px;
+}
+.sub-link a{
+    margin-left: 50px;
+}
+.Resources{
+    display: block;
+}
+.Resources h1{
+    color: white;
+    font-size: 25px;
+}
+#email{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    color: olive;
+    background-color: transparent;
+    border: 2px solid olive;
+    font-size: 15px;
+}
+#email:hover{
+border: 2px solid white;
+box-shadow: 0 0 10px olive, 0 0 20px olive;
+}
+button{
+    height: 45px;
+    width: 20%;
+    border-radius: 5px;
+    color: olive;
+    border: 2px solid olive;
+}
+button:hover{
+    color: white;
+    background-color: olive;
+}
+.email{
+    display: block;
+    margin-right: 5px;
+}
+.email h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.email p{
+    color: white;
+    font-size: 15px;
+}
+.email span{
+    color: olive;
+}
+.scroll{
+    display: flex;
+    flex-direction: row;
+    background-color: navy;
+}
+.scrolling-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+.scrolling-text img{
+    margin-top: 5px;
+}
+.scrolling-head{
+    color: olive;
+}
+.line{
+    background-color: navy;
+}
+#back-to-top{
+    position: fixed;
+    z-index: 9999;
+    border: 2px solid olive;
+    background-color: navy;
+    color: olive;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+#back-to-top:hover{
+    background-color: olive;
+    color: navy;
+    border: 2px solid navy;
+}

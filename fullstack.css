@@ -1,0 +1,1273 @@
+.background-video-container{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.video video{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.newton-email{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: navy;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: olive;
+    border: 2px solid olive;
+    font-size: 2em;
+    text-align: center;
+}
+.newton-location{
+    position: fixed;
+    bottom: 20px;
+    left: 95px;
+    background-color: navy;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: olive;
+    border: 2px solid olive;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: navy;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: olive;
+    border: 2px solid olive;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.back-to-top:hover{
+    animation: colorglow 5s linear infinite;
+    color: navy;
+
+}
+.back-to-bottom{
+    position: fixed;
+    bottom: 20px;
+    right: 95px;
+    background-color: navy;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: olive;
+    border: 2px solid olive;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.back-to-bottom:hover{
+    animation: colorglow 5s linear infinite;
+    color: navy;
+
+}
+.fullstack{
+    z-index: 1;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.623);
+
+
+}
+.fullstack h1{
+    color: white;
+    font-size: 45px;
+    font-family: "great vibes",cursive;
+}
+.fullstack p{
+    color: white;
+    font-size: 25px;
+    font-family: "lucida handwritting",cursive;
+}
+.about-program{
+    background: linear-gradient(135deg,rgba(128, 128, 0, 0.137) 0%, white 25%,white 50%,rgba(128, 128, 0, 0.137) 75%, rgba(128, 128, 0, 0.137) 100%);
+   border-top:5px solid black;
+   margin-top: 25px;
+   border-left: 1px solid olive;
+   border-right: 1px solid chocolate;
+   border-bottom: 1px solid white;
+   text-align: center;
+   border-radius: 20px;
+}
+.about-program h1{
+    color: olive;
+    font-size: 2em;
+    font-family: "lucida handwritting",cursive;
+}
+.about-program i{
+    color: navy;
+}
+.about-program p{
+    color: black;
+    font-family: "lucida handwritting",cursive;
+    font-size: 17px;
+}
+::selection{
+    background-color: olive;
+    color: white;
+}
+.about-program p::first-letter{
+    color: olive;
+    font-size: 30px;
+    font-style: italic;
+}
+.scroll-container{
+    width: 97%;
+    border: 2px solid transparent;
+    overflow-x: auto;
+    margin-top: 2em;
+    margin-left: 1.2em;
+}
+.scroll-container::-webkit-scrollbar{
+    display: none;
+}
+.scroll-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-right: 1em;
+    animation: slide 20s linear infinite;
+    transition: slide 5s ease-in-out;
+}
+.image img{
+    height: 30em;
+    border-radius: 10px;
+    flex: 1 1 0;
+    gap: 2em;
+    width: 30em;
+    padding-right: 2em;
+}
+@keyframes slide{
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
+.involve{
+    color: olive;
+    font-size: 2em;
+    text-align: center;
+    font-family: "lucida handwritting",cursive;
+}
+.involve i{
+    color: navy;
+    
+}
+.involve-explanation{
+    color: gray;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "lucida handwritting",cursive;
+}
+.flip-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+.flip-container{
+    width: 345px;
+    height: 345px;
+    perspective: 1200px;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    background-color: white;
+    transition: transform 1s ease;
+    cursor: zoom-out;
+    position: relative;
+
+}
+ .card-container:hover{
+    transform: rotateY(180deg);
+}
+.card1{
+    text-align: center;
+    background-color: white;
+    border-top: 3px solid olive;
+     border-left: 3px solid olive;
+      border-bottom:1px solid navy;
+     border-right: 1px solid navy;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+.card2{
+    text-align: center;
+    background-color: white;
+     border-top: 3px solid navy;
+     border-left: 3px solid navy;
+      border-bottom: 1px solid olive;
+     border-right: 1px solid olive;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+.card2 h1{
+    color: navy;
+    font-size: 1.5em;
+    font-family: "lucida handwritting",cursive;
+}
+.card2 p{
+    color: black;
+    font-family: "lucida handwritting",cursive;
+    text-align: justify;
+    padding: 5px;
+}
+.card2 p::first-letter{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.774);
+    font-style: italic;
+
+}
+.card2 span{
+    color: navy;
+}
+.card1 h1{
+    color: olive;
+    font-size: 1.5em;
+    font-family: "lucida handwritting",cursive;
+}
+.card1 p{
+    color: black;
+    font-family: "lucida handwritting",cursive;
+   text-align: justify;
+   padding: 5px;
+}
+.card1 p::first-letter{
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.842);
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+.card1 span{
+    color: olive;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid olive;
+    border-radius: 5px;
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+
+}
+a:hover{
+    animation: colorglow 5s linear infinite;
+}
+a:focus{
+    animation: colorglow 5s linear infinite;
+}
+@keyframes colorglow{
+    0%{
+        background-color: transparent;
+        border: 2px solid black;
+        box-shadow: 0 0 20px black, 0 0 40px black;
+    }
+    20%{
+        background-color: transparent;
+        border: 2px solid olive;
+        box-shadow: 0 0 20px olive, 0 0 40px  olive;
+    }
+    40%{
+        background-color: transparent;
+        border: 2px solid green;
+        box-shadow: 0 0 20px green, 0 0 40px green;
+    }
+    60%{
+        background-color: transparent;
+        border: 2px solid navy;
+        box-shadow: 0 0 20px navy, 0 0 40px navy;
+    }
+    80%{
+        background-color: transparent;
+        border: 2px solid olive;
+        box-shadow: 0 0 20px olive, 0 0 40px olive;
+    }
+    100%{
+        background-color: transparent;
+        border: 2px solid navy;
+        box-shadow: 0 0 20px navy, 0 0 40px navy;
+    }
+}
+.flow-chart{
+    border: 2px solid black;
+    margin-top: 2em;
+    border-radius: 20px;
+    border-bottom: 5px solid black;
+}
+.flow-chart-head{
+    background-color: olive;
+    color: black;
+    border-radius: 1.5em;
+    width: 20em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.front-end-flow-chart{
+    border: 1px solid navy;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2em;
+    width: 50em;
+    margin-left: 14em;
+
+}
+.front-end-flowchart-head{
+     background-color: navy;
+    color: white;
+    border-radius: 1.5em;
+    width: 7em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.front-end-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.front-end-content2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.front-end-content2 h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.front-end-content h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.front-end-content h2{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 9em;
+    height: 1.5em;
+}
+.back-end-flow-chart{
+    border: 1px solid navy;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 4em;
+    width: 50em;
+    margin-left: 14em;
+
+}
+.back-end-flowchart-head{
+     background-color: navy;
+    color: white;
+    border-radius: 1.5em;
+    width: 7em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.back-end-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.back-end-content h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.testimony-head{
+    color: olive;
+    font-size: 2em;
+    font-family: "lucida handwritting",cursive;
+    text-align: center;
+    margin-top: 2em;
+}
+.testimony-motivation{
+    color: gray;
+     font-size: 1.4em;
+    font-family: "lucida handwritting",cursive;
+    text-align: center;
+
+}
+.testimony-motivation span{
+    color: olive;
+    font-size: 1.7em;
+    font-style: italic;
+}
+.testimony-head i{
+    color: navy;
+}
+.testimony-box{
+width: 97%;
+height: 25em;
+display: flex;
+box-shadow: 10px 10px 10px 10px black;
+overflow-x: auto;
+margin-top: 3em;
+/*background-color: rgba(20, 37, 43, 0.863);*/
+background-color: rgba(14, 13, 0, 0.726);
+border-radius: 10px;
+}
+.testimony-container{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1.5em;
+    scroll-behavior: smooth;
+    border-radius: 2em;
+}
+.testimony-container::-webkit-scrollbar{
+    display: inline;
+    color: white;
+    background-color: black;
+}
+/*.testimony-card img{
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+}*/
+.testimony-card{
+    width: 65em;
+    height: 20em;
+    border-radius: 1.5em;
+    text-align: center;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.575) 0%, rgba(0, 0, 0, 0.842) 33%, rgba(0, 0, 0, 0.911) 66%, black 99%, black 100%);
+    margin-top: 3em;
+    box-shadow:  20px 20px 50px 10px  black;
+    margin-bottom: 2em;
+}
+.testimony-card figcaption{
+    color: white;
+    font-family: "dancing script ",cursive;
+}
+.testimony-card p{
+    color: white;
+    font-family: "lucida handwritting", cursive;
+    padding: 7px;
+}
+.spinner{
+    width: 7em;
+    height: 7em;
+    position: relative; margin-left: 26.5em;
+    margin-bottom: 2em;
+}
+.spinner img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+.spinner::before{
+    content: "";
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    border: 2px solid white;
+    border-top: rgba(0, 0, 0, 0) ;
+    border-bottom: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    top: -10px;
+    left: -10px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+}
+@keyframes spin{
+    from {transform: rotate(0deg);}    
+    to {transform: rotate(360deg);}
+}
+.course-overview-head{
+    color: olive;
+    font-size: 2em;
+    font-family: "lucida handwritting",cursive;
+    text-align: center;
+    margin-top: 2em;
+}
+.course-overview-head i{
+    color: black;
+}
+.course-overview-sub-head{
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    text-align: center;    
+}
+.course-overview-sub-head i{
+    color: olive;
+}
+.course-overview-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;    
+    position: relative;
+    margin-bottom: 2em;
+}
+.full-stack-content-overview{
+    width: 53em;
+
+}
+.full-stack-content-overview h1{
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+.full-stack-content-overview h1 i{
+    color: olive;
+}
+.full-stack-content-overview p{
+    font-family: "lucida handwritting",cursive;
+}
+.separate{
+    color: black;
+    height: 100vh;
+    width: 0.1em;
+    border-top: 1px dotted black;
+}
+.full-stack-table-of-content{
+    border: 2px solid transparent;
+   /* background: linear-gradient(135deg, rgba(128, 128, 0, 0.178) 0%, rgba(87, 87, 0, 0.74) 50%, rgb(19, 19, 0) 100%);*/
+    background-color: transparent;
+    padding: 2em;
+    height: 31%;
+    position: sticky;
+    top:0;    
+    left: 0;
+}
+.full-stack-table-of-content fieldset{
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 2em;
+    padding: 1em;
+    display: block;
+    width: 100%;
+
+}
+.full-stack-table-of-content legend{
+    background-color: olive;
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.3em;
+    width: 15em;
+    height: 4em;
+    border-radius: 2em;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.full-stack-table-of-content legend i{
+    color: navy;
+}
+.full-stack-table-of-content button{
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 1em;
+    width: 15em;
+    height: 4em;
+    margin-top: 1em;
+    background-color: white;
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+}
+.full-stack-table-of-content button:hover{
+    border: 1px solid olive;
+    border-bottom: 5px solid olive;
+    border-radius: 2em;
+    width: 15em;
+    height: 4em;
+    margin-top: 1em;
+    background-color: white;
+    color: olive;
+    font-family: "lucida handwritting",cursive;
+}
+.full-stack-table-of-content button:focus{
+    border: 1px solid olive;
+    border-bottom: 5px solid olive;
+    border-radius: 2em;
+    width: 15em;
+    height: 4em;
+    margin-top: 1em;
+    background-color: white;
+    color: olive;
+    font-family: "lucida handwritting",cursive;
+    animation: colorglow 5s linear infinite;
+}
+.course-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+}
+/*.full-stack-table-of-content h1{
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+.full-stack-table-of-content h1 i{
+    color: olive;
+}
+.full-stack-table-of-content h2{
+       background: linear-gradient(135deg, rgba(128, 128, 0, 0.178) 0%, rgba(87, 87, 0, 0.74) 50%, rgb(19, 19, 0) 100%);
+       clip-path: inset(5px 5px 12px round 1.5em 0);
+       height: 3em;
+       padding: 0.7em 2em;
+       color: rgba(7, 5, 5, 0.979);
+       font-family: "great vibes",cursive;
+       font-size: 1em;
+       width: 17em;
+}
+.full-stack-table-of-content h2:hover{
+    background-color: rgb(7, 27, 21);
+}*/
+.back-end-flow-chart2{
+    border: 1px solid navy;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 4em;
+    width: 20em;
+    margin-left: 14em;
+
+}
+.back-end-flowchart-head2{
+     background-color: navy;
+    color: white;
+    border-radius: 1.5em;
+    width: 7em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.back-end-content2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.back-end-content2 h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.flow-chart2{
+    border: 1px solid black;
+    margin-top: 2em;
+    border-radius: 20px;
+    border-bottom: 5px solid black;
+}
+.flow-chart-head2{
+    background-color: olive;
+    color: black;
+    border-radius: 1.5em;
+    width: 20em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.front-end-flow-chart2{
+    border: 1px solid navy;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2em;
+    width: 20em;
+    margin-left: 14em;
+
+}
+.front-end-flowchart-head2{
+     background-color: navy;
+    color: white;
+    border-radius: 1.5em;
+    width: 7em;
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "lucida handwritting",cursive;
+}
+.front-end-contenty{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.front-end-content2y{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.front-end-content2y h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.front-end-contenty h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+}
+.front-end-contenty h2{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 5px solid navy;
+    border-radius: 2em;
+    width: 7em;
+    height: 1.5em;
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+}
+.full-stack-content-overview ul{
+    color: navy;
+    font-family: "lucida handwritting",cursive;
+}
+.full-stack-content-overview ul span{
+    color: olive;
+}
+.course-explanation{
+    color: darkgray;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.2em;    
+}
+.full-stack-content-overview span{
+    color: navy;
+}
+.job-opportunities{
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    margin-top: 2em;
+    border-radius: 2em;
+}
+.job-opportunities legend{
+    text-align: center;
+    background-color: olive;
+    font-family: "lucida handwritting",cursive;
+    font-size: 2em;
+    border-radius: 2em;
+    height: 2em;
+    align-content: center;
+    justify-content: center;  
+}
+.jobs{
+    display: block;
+    width: 20em;
+    border: 1px solid navy;
+    border-bottom: 6px solid navy;
+    border-radius: 2em;
+}
+.list-of-jobs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+.jobs h1{
+    background-color: white;
+    border: 1px solid navy;
+    border-bottom: 6px solid navy;
+    border-radius: 2em;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+
+}
+.jobs legend{
+    background-color: navy;
+    color: white;
+    width: 7em;
+}
+.FAQs{
+    text-align: center;
+    color: olive;
+    font-family: "lucida handwritting",cursive;
+    font-size: 2em;
+    margin-top: 2em;
+
+}
+.Admission i{
+    color: navy;
+}
+.Admission{
+    color: olive;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+.Requirements-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5%;
+}
+.Requirements-list li{
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.2em;
+    color: gray;
+    /*list-style: square;*/
+    text-align: left;
+    margin-left: 2em;
+    list-style: none;
+   /* list-style-type: decimal-leading-zero;*/    
+}
+.Requirements-list li::before{
+   /* content: "✓ ";*/
+    content: "🔰 ";
+    color: navy;
+    font-size: 1em;
+    font-weight: bold;
+}
+.tution-duration{
+    overflow: hidden;
+    margin-top: 2em;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 30%;
+    position: relative;
+
+}
+.tution-background-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    z-index: -1;
+    position: absolute;
+    z-index: 1;
+
+}
+.tution-content{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 2em;
+    z-index: 1;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+}
+.tution-head{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 2em;
+    text-align: center;
+}
+.tution-description{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+}
+.links{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.enroll-button{
+    transform: scaleX(2);
+    border: 2px solid olive;
+}
+footer{
+    background-color: rgb(31, 31, 0);
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.newton-footer-content-head1{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    height: 15px;
+}
+.newton-footer-content-head1 span{
+    color: yellow;
+}
+.newton-footer-content-head2{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+}
+.newton-footer-content-description{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+
+}
+.social-icons a{
+        border-radius: 50%;
+        width: 32px;
+        height: 27px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: 2px solid yellow;
+        padding: 3px;
+}
+.website-links h2{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    margin-left: 1.8em;
+}
+.website-links span{
+    color: white;
+    font-size: 1.2em;
+}
+.website-links ul{
+    margin-top: 1em;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 200px;
+}
+.website-links ul li{
+    margin-bottom: 1em;
+    font-family: "lucida handwritting",cursive;
+    color: white;
+}
+.website-links ul li a{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 0.8em;
+    padding: 1px;
+}
+.website-links ul li span{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+}
+.resourses h2{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.5em;
+    margin-left: 1.8em;
+}
+.resourses ul{
+    margin-top: 1em;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 380px;
+}
+.resourses ul li{
+    margin-bottom: 1em;
+    font-family: "lucida handwritting",cursive;
+    color: white;
+}
+.resourses ul li a{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 0.8em;
+    padding: 2px;
+}
+.resourses ul li span{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+}
+.news-letter h2{
+    color: yellow;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1.3em;;
+
+}
+.news-letter p{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    font-size: 1em;
+    margin-top: 1em;
+}
+.news-letter input{
+    margin-top: 1em;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid yellow;
+    font-family: "lucida handwritting",cursive;
+    background-color: white;
+    color: olive;
+}
+.news-letter button{
+    margin-top: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+    background-color: olive;
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    cursor: pointer;
+}
+.news-letter button:hover{
+background-color: white;
+color: olive;
+animation: colorglow 5s linear infinite;
+}
+.news-letter button:focus{
+background-color: white;
+color: olive;
+animation: colorglow 5s linear infinite;
+}
+.footer-line{
+    border-top: 1px dashed yellow;
+    margin-top: 2em;
+    border-bottom: 1px dashed yellow;
+}
+.footer-bottom{
+    color: white;
+    font-family: "lucida handwritting",cursive;
+    text-align: center;
+}
+.footer-bottom span{
+    color: yellow;
+}
+
+.FAQs i{
+    color: black;
+}
+@media only screen and (max-width: 800px){
+    .full-stack-table-of-content{
+        position: static;
+        width: 90%;
+        height: auto;
+        margin-bottom: 2em;
+        margin-right: 20px;
+    }
+    .full-stack-content-overview{
+        width: 100%;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .course-overview-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .front-end-flow-chart{
+        margin-left: 0;
+        width: 90%;
+    }
+    .back-end-flow-chart{
+        margin-left: 0;
+        width: 90%;
+    }
+    .flow-chart{
+        width: 90%;
+        margin-left: 0;
+    }
+    .flow-chart2{
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2em;
+    }
+    .front-end-flow-chart2{
+        margin-left: 0;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .back-end-flow-chart2{
+        margin-left: 0;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.job-opportunities{
+    width: 90%;
+    margin: auto;    
+}
+}
+
+/* Stronger small-screen overrides appended */
+@media only screen and (max-width: 800px){
+    /* Global safe-guards */
+    html, body{ overflow-x: hidden; }
+    *, *::before, *::after{ box-sizing: border-box; }
+    img, video{ max-width: 100%; height: auto; }
+
+    /* Typography and hero adjustments */
+    .fullstack{ padding-top: 60px; padding-bottom: 60px; }
+    .fullstack h1{ font-size: 28px; }
+    .fullstack p{ font-size: 18px; }
+
+    /* Floating action buttons */
+    .newton-email, .newton-location, .back-to-top, .back-to-bottom{
+        width: 42px; height: 42px; font-size: 1.4em;
+    }
+    .newton-location{ left: 75px; }
+    .back-to-bottom{ right: 75px; }
+
+    /* Content layout */
+    .course-overview-box{ flex-direction: column; align-items: center; gap: 1em; }
+    .full-stack-table-of-content{ position: static; width: 95%; height: auto; margin-bottom: 1.5em; margin-right: 0; }
+    .full-stack-table-of-content fieldset{ border-radius: 1em; }
+    .full-stack-table-of-content legend{ width: auto; padding: 0 1em; font-size: 1.1em; }
+    .full-stack-table-of-content button{ width: 100%; height: 3em; }
+
+    .full-stack-content-overview{ width: 100%; padding: 0 10px; text-align: justify; }
+    .full-stack-content-overview h1{ font-size: 1.2em; }
+
+    /* Scrollers and images */
+    .scroll-container{ width: 100%; margin-left: 0; }
+    .image img{ width: 100%; height: auto; padding-right: 0; }
+
+    /* Flow charts */
+    .front-end-flow-chart, .back-end-flow-chart, .flow-chart{ margin-left: 0; width: 95%; }
+    .flow-chart2{ margin-left: 0; width: 100%; height: auto; margin-bottom: 2em; }
+    .front-end-flow-chart2, .back-end-flow-chart2{ margin-left: 0; width: 90%; justify-content: center; align-items: center; text-align: center; }
+
+    /* Flip cards */
+    .flip-container{ width: 95%; height: auto; }
+    .card1 p, .card2 p{ font-size: 0.95em; }
+
+    /* Testimony section */
+    .testimony-box{ width: 100%; height: auto; box-shadow: none; }
+    .testimony-card{ width: 95%; height: auto; margin: 1em auto; }
+    .spinner{ width: 5em; height: 5em; margin-left: auto; margin-right: auto; }
+    .spinner::before{ width: 6em; height: 6em; top: -10px; left: -10px; }
+
+    /* Jobs grid */
+    .job-opportunities{ width: 95%; margin: auto; }
+    .list-of-jobs{ flex-wrap: wrap; justify-content: center; gap: 1em; }
+    .jobs{ width: 95%; }
+
+    /* Requirements grid */
+    .Requirements-list{ grid-template-columns: 1fr; gap: 1em; }
+    .Requirements-list li{ margin-left: 1em; }
+
+    /* Tuition banner */
+    .tution-content{ width: 100%; padding: 1em; }
+    .tution-head{ font-size: 1.6em; }
+    .tution-description{ font-size: 1em; }
+    .links{ gap: 1em; flex-wrap: wrap; }
+    .enroll-button{ transform: none; }
+
+    /* Footer */
+    .footer-container{ display: grid; grid-template-columns: 1fr; gap: 1.5em; padding: 1em; }
+    .website-links ul{ grid-template-columns: 1fr; width: 100%; }
+    .resourses ul{ grid-template-columns: 1fr; width: 100%; }
+    .news-letter input{ width: 100%; }
+}
