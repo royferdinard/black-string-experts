@@ -1,0 +1,1534 @@
+.background-image-container{
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
+}
+.newton-head{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(128, 126, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-nav{
+ display: flex;
+}
+.home-nav a{
+    height: 25px;
+}
+.drop-list-button {
+    background-color: transparent;
+    height: 32px;
+    width: 70px;
+    margin-right: 20px;
+    text-decoration: none;
+      border-radius: 5px;
+    border: 2px solid olive;
+    color: olive;
+}
+.drop-list-button:hover{
+    color: white;
+    background-color: olive;
+    border: 2px solid olive;
+}
+.drop-list-courses{
+    display: none;
+    background-color: white;
+    box-shadow: 20px 20px 50px 15px olive ;
+    z-index: 9999;
+    width: 70px;
+    padding: 5px;
+    transform: translateY(-10);
+    transition: transform 0.45s ease, opacity 0.45s ease, maximum-height 0.45s ease;
+}
+.drop-list-courses i{
+    font-size: 10px;
+    padding-left: 5px;
+}
+.drop-list-courses a{
+    width: 60px;
+}
+.drop-list-items:hover .drop-list-courses{
+    display: block;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+.header-section a{
+margin-right: 20px;
+}
+.head-and-motto-container{
+    display: flex;
+}
+.group{
+    display: block;
+    margin-bottom: 5px;
+}
+.group h1{
+    height: 5px;
+}
+.motto{
+    margin-left: 11px;
+    color: rgba(0, 0, 0, 0.699);
+    letter-spacing: 14px;
+    font-size: 15px;
+    margin-top: 0;
+}
+.logo{
+    margin-top: 5px;
+    background-color: transparent;
+    text-decoration: none;
+}
+a{
+   position: relative;
+   color: olive;
+   text-decoration: none;
+   border-radius: 5px;
+   background-color: transparent;
+   transition: all 0.3s ease;
+   border: 2px solid olive;
+   display: inline-block;
+   box-shadow: 0 0 10px olive, 0 0 20px olive;
+   padding: 14px, 30px;
+   font-family: sans-serif;
+   font-size: 15px; 
+}
+a:hover{
+    animation: colorglow 2s linear infinite;
+}
+@keyframes colorglow{
+    0%{ 
+        box-shadow: 0 0 20px yellowgreen, 0 0 40px yellowgreen;
+        background-color: transparent;
+        border-color: yellowgreen;
+        color: yellowgreen;
+    }
+    20%{ 
+        box-shadow: 0 0 20px blueviolet, 0 0 40px blueviolet;
+        background-color: transparent;
+        border-color: blueviolet;
+        color: blueviolet;
+    }
+    40%{ 
+        box-shadow: 0 0 20px blue, 0 0 40px blue;
+        background-color: transparent;
+        border-color: blue;
+        color: blue;
+    }
+    60%{ 
+        box-shadow: 0 0 20px olive, 0 0 40px olive;
+        background-color: transparent;
+        border-color: olive;
+        color: olive;
+    }
+    80%{ 
+        box-shadow: 0 0 20px maroon, 0 0 40px maroon;
+        background-color: transparent;
+        border-color: maroon;
+        color: maroon;
+    }
+    100%{ 
+        box-shadow: 0 0 20px darkblue, 0 0 40px darkblue;
+        background-color: transparent;
+        border-color: darkblue;
+        color: darkblue;
+    }
+}
+.image1{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    object-fit: cover;
+}
+.background-content{
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+.background-content h1{
+    color: white;
+    font-size: 60px;
+    font-family: "dancing script",cursive;
+    height: 20px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.background-content span{
+color: olive;
+}
+.background-content p{
+    color: white;
+    font-size: 40px;
+    font-family: "dancing script", cursive;
+    margin-bottom: 200px;
+}
+.background-content img{
+    margin-top: 40px;
+}
+.about-us{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+.story h1{
+    color: olive;
+    text-align: center;
+}
+.story span{
+    color: navy;
+}
+.story p{
+    color: gray;
+}
+.story p::first-letter{
+    font-size: 40px;
+}
+.about-container img{
+    width: 700px;
+    height: 700px;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+.cardys{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.cardy1{
+    background-color: white;
+    border: 5px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.233)inset;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.cardy1:hover{
+    transform: scale(1.00);
+}
+.card1 h1{
+    color: navy;
+}
+.cardy1 h1 span{
+    color: olive;
+}
+.cardy1 i{
+    color: navy;
+}
+.cardy1 p{
+    color: gray;
+}
+.cardy2{
+    background-color: white;
+    border: 5px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.233)inset;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.cardy2:hover{
+    transform: scale(1.00);
+}
+.cardy2 h1{
+    color: navy;
+}
+.cardy2 h1 span{
+    color: olive;
+}
+.cardy2 p{
+    color: gray;
+}
+.cardy3{
+    background-color: white;
+    border: 5px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.233)inset;
+    margin-left: 50px;
+}
+.cardy3:hover{
+    transform: scale(1.00);
+}
+.cardy3 h1{
+    color: navy;
+}
+.cardy3 h1 span{
+    color: olive;
+}
+.cardy3 p{
+    color: gray;
+}
+.value{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.value h1{
+    font-size: 15px;
+    color: rgba(0, 0, 128, 0.658);
+}
+.value h1 span{
+    color: gray;
+}
+#back-to-top{
+    position: fixed;
+    display: none;
+    background-color: navy;
+    color: olive;
+    border: 2px solid olive;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#back-to-top:hover{
+    background-color: olive;
+    color: navy;
+    border: 2px solid navy;
+}
+.Governace{
+    text-align: center;
+    color: olive;
+}
+.Governace span{
+    color: navy;
+}
+.Governace i{
+    border-radius: 50%;
+    border: 2px solid olive;
+    width: 40px;
+    height: 40px;
+}
+.governace-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.governace-container1{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 20px 45px rgba(128, 128, 0, 0.377);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.governace-container1:hover{
+    box-shadow:0 20px 45px rgba(128, 128, 0, 0.377);
+    transform: scale(1.01);
+}
+.governace-container1-head{
+    font-size: 10px;
+    text-align: center;
+}
+.governace-container1-head h1{
+    color: navy;
+    font-weight: 700;
+
+}
+.governace-container1-head h2{
+    color: olive;
+    height: 10px;
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+}
+.governace-container1-head i{
+color: olive;
+border: 2px solid olive;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+.governace-container1-content{
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+    overflow-y: scroll;
+    position: relative;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    display: block;
+}
+.governace-container2{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow:0 20px 45px rgba(128, 128, 0, 0.377);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.governace-container2:hover{
+    box-shadow:0 20px 45px rgba(128, 128, 0, 0.377);
+    transform: scale(1.01);
+}
+.governace-container2-head{
+    font-size: 10px;
+    text-align: center;
+}
+.governace-container2-head h1{
+    color: navy;
+    font-weight: 700;
+
+}
+.governace-container2-head h2{
+    color: olive;
+    height: 10px;
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+}
+.governace-container2-head i{
+color: olive;
+border: 2px solid olive;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+.governace-container2-content{
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+    overflow-y: scroll;
+    position: relative;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    display: block;
+}
+.governace-container3{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 20px 45px rgba(128, 128, 0, 0.377);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.governace-container3:hover{
+    box-shadow: 0 20px 45px rgba(128, 128, 0, 0.377);
+    transform: scale(1.01);
+}
+.governace-container3-head{
+    font-size: 10px;
+    text-align: center;
+}
+.governace-container3-head h1{
+    color: navy;
+    font-weight: 700;
+
+}
+.governace-container3-head h2{
+    color: olive;
+    height: 10px;
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+}
+.governace-container3-head i{
+color: olive;
+border: 2px solid olive;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+.governace-container3-content{
+    font-family: "dancing script",cursive;
+    font-size: 20px;
+    overflow-y: scroll;
+    position: relative;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    display: block;
+}
+/*.scrolling-image-container{
+    background-color: white;
+    display: flex;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.scrolling-image-container img{
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    display: inline-block;
+    animation: scrol 40s linear infinite;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.scrolling-image-container img:hover{
+    transform: translate(-20px, -20px) scale(1.05);
+    opacity: 0.9;
+}
+@keyframes scrol{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}*/
+.scrolling-image-container{
+    width: 600px;
+    height: 500px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+.photo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.image-container:hover{
+    transform: rotateY(180deg);
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transform-origin: center;
+    will-change: transform;
+    transform: translateZ(0);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.imag1{
+    background-color: hsl(175deg, 100%, 70%);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.imag1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imag2{
+    background-color: hsl(190deg, 100%, 70%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.imag2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imag3{
+    background-color: hsl(175deg, 100%, 70%);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.imag3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imag4{
+    background-color: hsl(175deg, 100%, 70%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    justify-content:center ;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.imag4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*@keyframes rotate-cubes{
+    0%{transform: rotateX(45deg) rotateY(45deg);}
+    25%{transform: rotateX(-45deg) rotateY(-45deg);}
+    50%{transform: rotateX(-45deg) rotateY(-45deg);}
+    75%{transform: rotateX(-45deg) rotateY(-45deg);}
+    100%{transform: rotateX(45deg) rotateY(45deg);}
+}*/
+#back1{
+    left: 20px;
+    background-color: olive;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px; 
+}
+#back1:hover{
+    background-color: transparent;
+    border: 2px solid olive;
+    color: olive;
+}
+.scroll-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#next1{
+    left: 20px;
+    background-color: olive;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px; 
+}
+#next1:hover{
+    background-color: transparent;
+    border: 2px solid olive;
+    color: olive;
+}
+::selection{
+    background-color: olive;
+    color: white;
+}
+.reason{
+    color: navy;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.reason i{
+    color: olive;
+}
+.reason2{
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card1{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+     border: 2px solid rgba(128, 128, 0, 0.233);
+
+}
+.card1:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card1 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card1 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card1 img{
+    width: 100%;
+    transition: transform 0.3s ease;
+    clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card1 img:hover{
+    transform: scale(1.05);
+}
+.card2{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 0, 0.233);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card2:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card2 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card2 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card2 img{
+    width: 100%;
+    transition: transform 0.3s ease;
+     clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card2 img:hover{
+    transform: scale(1.05);
+}
+.card3{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 0, 0.233);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card3:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card3 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card3 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card3 img{
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 190px;
+     clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card3 img:hover{
+    transform: scale(1.05);
+}
+.card4{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 0, 0.233);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card4:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card4 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card4 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card4 img{
+    width: 100%;
+    height: 35vh;
+    transition: transform 0.3s ease;
+     clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card4 img:hover{
+    transform: scale(1.05);
+}
+.card5{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 0, 0.233);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card5:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card5 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card5 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card5 img{
+    width: 100%;
+    height: 35vh;
+    transition: transform 0.3s ease;
+     clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card5 img:hover{
+    transform: scale(1.05);
+}
+.card6{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 25px white;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 0, 0.233);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.200);
+    margin-top: 30px;
+}
+.card6:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.425);
+}
+.card6 h1{
+    color: olive;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    margin-top: 0;
+    height: 15px;
+
+}
+.card6 p{
+    font-family: "dancing script", cursive;
+    text-align: justify;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.card6 img{
+    width: 100%;
+    height: 35vh;
+    transition: transform 0.3s ease;
+     clip-path: inset(20px 20px 50px round 50px 0);
+}
+.card6 img:hover{
+    transform: scale(1.05);
+}
+.facilities{
+    color: navy;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+.facilities i{
+    color: olive;
+}
+.sub-facilities{
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+.classrom-image img{
+    width: 100%;
+    height: 500px;
+}
+.classroom{
+    color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.classroom i{
+    color: navy;
+}
+.classroom-description{
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+}
+.classroom-description p{
+    color: gray;
+    font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-weight: 700;
+}
+.classroom-description p::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.comp-lab{
+     color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.comp-lab i{
+    color: navy;
+}
+.comp-lab-image img{
+     width: 100%;
+    height: 500px;
+}
+.comp-lab-description{
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+}
+.comp-lab-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+.comp-lab-description::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.library{
+    color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.library i{
+    color: navy;
+    
+}
+.library-image img{
+    width: 100%;
+    height: 500px;
+}
+.library-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+}
+.library-description p::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.music{
+  color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;  
+}
+.music i{
+    color: navy;
+}
+.music-image img{
+    width: 100%;
+    height: 500px;
+}
+.music-description{
+     color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+.music-description p::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.music-description h1{
+    font-size: 65px;
+    position: absolute;
+    z-index: -1;
+    color: rgba(128, 128, 0, 0.349);
+    margin-left: 50%;
+}
+.arts{
+    color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.arts i{
+    color: navy;
+}
+.arts-image img{
+    width: 100%;
+    height: 500px;
+}
+.arts-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+.arts-description i{
+     font-size: 65px;
+    position: absolute;
+    z-index: -1;
+    color: rgba(128, 128, 0, 0.349);
+    margin-left: 50%;
+}
+.arts-description p::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.hall{
+     color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.hall i{
+    color: navy;
+}
+.hall-image img{
+    width: 100%;
+    height: 500px;
+}
+.hall-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+}
+.hall-description p::first-letter{
+    color: olive;
+    font-size: 40px;
+}
+.hall-description i{
+    position: absolute;
+    margin-left: 50%;
+    font-size: 80px;
+    z-index: -1;
+    color: rgba(128, 128, 0, 0.301);
+}
+.Cafeteria{
+    color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.Cafeteria i{
+    color: navy;
+}
+.cafeteria-image img{
+    width: 100%;
+    height: 500px;
+}
+.cafeteria-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315)inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+}
+.cafeteria-description p::first-letter{
+color: olive;
+    font-size: 40px;
+}
+.cafeteria-description i{
+    position: absolute;
+    margin-left: 50%;
+    font-size: 80px;
+    z-index: -1;
+    color: rgba(128, 128, 0, 0.301);
+}
+.kitchen{
+     color: olive;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 50px;
+     font-family: "dancing script",cursive;
+}
+.kitchen i{
+    color: navy;
+}
+.kitchen-image img{
+    width: 100%;
+    height: 500px;
+}
+.kitchen-description{
+    color: gray;
+     font-family: "dancing script",cursive;
+    font-size: 23px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: white;
+    border-top-color: navy;
+    border: 2px solid white;
+    box-shadow: 0 10px 25px rgba(128, 128, 0, 0.315) inset;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+.kitchen-description i{
+    position: absolute;
+    margin-left: 50%;
+    font-size: 80px;
+    z-index: -1;
+    color: rgba(128, 128, 0, 0.301);
+}
+.last-picture{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.last-picture img{
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.last-content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(1, 1, 1, 0.747);
+    color: white;
+    font-weight: 900;
+    font-family: "dancing script",cursive;
+    font-size: 50px;
+    height: 100vh;
+    padding-top: 50px;
+}
+.last-content span{
+    color: olive;
+}
+.footer-logo{
+    width: 80px;
+    height: 80px;
+
+}
+.picture-container p{
+    font-family: "dancing script", cursive;
+    font-size: 30px;
+}
+footer{
+    background-image: url('./backgronds/logo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background-color: navy;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.location{
+    display: block;
+    justify-content: center;
+}
+.location p{
+    color: white;
+    padding-left: 10px;
+    font-size: 15;
+}
+.location h1{
+    color: white;
+    height: 10px;
+    font-size: 25px;
+    
+}
+.location h2{
+    color: olive;
+    font-size: 27px;
+    margin-top: 0;
+    height: 30px;
+}
+.division-line{
+    border: 10px solid olive;
+    width: 1px;
+    height: 250px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+.page-links{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-links ul{
+    list-style: none;
+}
+.page-links ul li{
+    margin-bottom: 20px;
+}
+.dash{
+    color: olive;
+}
+.page-links h1{
+    color: white;
+    font-size: 25px;
+}
+.web-link{
+display: block;
+}
+.web-link ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+.web-link h1{
+    color: white;
+    font-size: 25px;
+}
+.sub-link a{
+    margin-left: 50px;
+}
+.Resources{
+    display: block;
+}
+.Resources h1{
+    color: white;
+    font-size: 25px;
+}
+#email{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    color: olive;
+    background-color: transparent;
+    border: 2px solid olive;
+    font-size: 15px;
+}
+#email:hover{
+border: 2px solid white;
+box-shadow: 0 0 10px olive, 0 0 20px olive;
+}
+.button{
+    height: 45px;
+    width: 20%;
+    border-radius: 5px;
+    color: olive;
+    border: 2px solid olive;
+}
+.button:hover{
+    color: white;
+    background-color: olive;
+}
+.email{
+    display: block;
+    margin-right: 5px;
+}
+.email h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.email p{
+    color: white;
+    font-size: 15px;
+}
+.email span{
+    color: olive;
+}
+.scroll{
+    display: flex;
+    flex-direction: row;
+    background-color: navy;
+}
+.scrolling-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+.scrolling-text img{
+    margin-top: 5px;
+}
+.scrolling-head{
+    color: olive;
+}
+.line{
+    background-color: navy;
+}
+#back-to-top{
+    position: fixed;
+    z-index: 9999;
+    border: 2px solid olive;
+    background-color: navy;
+    color: olive;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: transform 0.3s ease, background-color 5s ease, color 2s ease, border 0.3s ease;
+
+}
+#back-to-top:hover{
+    background-color: olive;
+    color: navy;
+    border: 2px solid navy;
+    transform: rotate(360deg);
+}
